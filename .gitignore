@@ -1,4 +1,13 @@
+# Ignore all by default
 *
+
+# include *.yaml files except secrets.yaml
 !*.yaml
-!.gitignore
 secrets.yaml
+
+# include need non-yaml files
+!.gitignore
+!secrets.sha1sum
+
+# directories
+!hooks/
