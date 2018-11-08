@@ -20,12 +20,11 @@ frontend:
 # Enables configuration UI
 config:
 
-
+# HTTP server setup
 http:
   base_url: !secret http_baseurl
   ssl_certificate: /ssl/fullchain.pem
   ssl_key: /ssl/privkey.pem
-
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -65,6 +64,11 @@ tts:
 
 # Cloud
 cloud:
+
+# Z-Wave
+zwave:
+  usb_path: /dev/ttyACM0
+  network_key: !secret zwave_network_key
 
 group: !include groups.yaml
 automation: !include automations.yaml
