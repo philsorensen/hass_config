@@ -12,7 +12,7 @@ homeassistant:
   customize: !include customize.yaml
 
 # Show links to resources in log and frontend
-introduction:
+#introduction:
 
 # Enables the frontend
 frontend:
@@ -63,7 +63,7 @@ tts:
   - platform: google
 
 # Cloud
-cloud:
+#cloud:
 
 # Z-Wave
 zwave:
